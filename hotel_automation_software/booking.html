@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="image/favicon.png" type="image/png" />
+    <title>Royal Hotel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css"
+    />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!--================Breadcrumb Area =================-->
+    <section class="breadcrumb_area">
+      <div
+        class="overlay bg-parallax"
+        data-stellar-ratio="0.8"
+        data-stellar-vertical-offset="0"
+        data-background=""
+      ></div>
+      <div class="container">
+        <div class="page-cover text-center">
+          <h2 class="page-cover-tittle">Onsite Booking</h2>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Booking</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!--================Breadcrumb Area =================-->
+    <br />
+    <header>
+      <form action="booking.php" method="get">
+        <div class="hotel_booking_area position">
+          <div class="container">
+            <div class="hotel_booking_table">
+              <div class="col-md-3">
+                <h2>
+                  Book<br />
+                  Your Room
+                </h2>
+              </div>
+              <div class="col-md-9">
+                <div class="boking_table">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="book_tabel_item">
+                        <div class="form-group">
+                          <div class="input-group date" id="datetimepicker1">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="arrival"
+                              placeholder="Arrival Date"
+                            />
+                            <span class="input-group-addon">
+                              <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group date" id="datetimepicker1">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Departure Date"
+                              name="leave"
+                            />
+                            <span class="input-group-addon">
+                              <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="book_tabel_item">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              placeholder="Name"
+                            />
+                            <span class="input-group-addon">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group date">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="email"
+                              name="email"
+                            />
+                            <span class="input-group-addon">
+                              <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="book_tabel_item">
+                        <div class="input-group">
+                          <select class="wide" name="roomType">
+                            <option value="SingleBed Without AC">
+                              Single Bed Without AC
+                            </option>
+                            <option value="DoubleBed Without AC">
+                              Double Bed Without AC
+                            </option>
+                            <option value="SingleBed With AC">
+                              Single Bed With AC
+                            </option>
+                            <option value="DoubleBed With AC">
+                              Double Bed With AC
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group date">
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="token"
+                              min="1000"
+                              max="10000000"
+                              name="token"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="book_tabel_item">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="RoomNumber"
+                              placeholder="Room Number"
+                            />
+                            <span class="input-group-addon">
+                              <i class="fa fa-room" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="book_tabel_item">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <input
+                              type="tel"
+                              class="form-control"
+                              name="phone"
+                              placeholder="phone"
+                            />
+                            <span class="input-group-addon">
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          class="btn primary"
+                          style="width: 250px; margin-left: 270px;" 
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </header>
+    <br />
+    <footer class="footer-area section_gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6 class="footer_title">About Hotel Blue</h6>
+              <p>
+                HOTEL BLUE provides an outstanding stay for you..It have single
+                bed room and double bed room with AC and non-AC..many people
+                choosing the HOTEL BLUE for making a memorable stay and we
+                always cares about your facilities and happy stay
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6" style="margin-left: 350px">
+            <div class="single-footer-widget">
+              <h6 class="footer_title">Navigation Links</h6>
+              <div class="row">
+                <div class="col-4">
+                  <ul class="list_style">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#facil">Feature</a></li>
+                    <li><a href="#facil">Services</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list_style">
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="accomodation.html">Pricing</a></li>
+                    <li><a href="contact_details.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border_line"></div>
+        <div
+          class="row footer-bottom d-flex justify-content-between align-items-center"
+        >
+          <p class="col-lg-8 col-sm-12 footer-text m-0">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+          <div class="col-lg-4 col-sm-12 footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

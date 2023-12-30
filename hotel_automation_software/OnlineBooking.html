@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="image/favicon.png" type="image/png" />
+    <title>Hotel Blue</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css"
+    />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+      body {
+      background-color: #04091e;
+      color: white;
+      }
+      .btn-book-now {
+        background-color: yellow;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+            <!--================Header Area =================-->
+            <header class="header_area">
+              <div class="container">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <a class="navbar-brand logo_h" href="index.html"><img src="image/hotel_blue.png" alt="" style="height: 80px; width: 180px;"></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                          <ul class="nav navbar-nav menu_nav ml-auto">
+                              <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li> 
+                              <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                              <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
+                              <li class="nav-item active"><a class="nav-link" href="OnlineBooking.html">Online Booking</a></li> 
+                              <li class="nav-item"><a class="nav-link" href="managerLogin.html">Manager</a></li>
+                              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                          </ul>
+                      </div> 
+                  </nav>
+              </div>
+          </header>
+          <!--================Header Area =================-->
+    <!--================Breadcrumb Area =================-->
+    <section class="breadcrumb_area">
+      <div
+        class="overlay bg-parallax"
+        data-stellar-ratio="0.8"
+        data-stellar-vertical-offset="0"
+        data-background=""
+      ></div>
+      <div class="container">
+        <div class="page-cover text-center">
+          <h2 class="page-cover-tittle">Online Booking</h2>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Booking</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!--================Breadcrumb Area =================-->
+    <br />
+    <center>
+   <header>
+            <div class="container">
+    <h1>Booking Form</h1>
+    <form action="onlineBooking.php" method="get">
+      <div class="form-group col-md-6">
+        <label for="arrival_date">Arrival Date:</label>
+        <input type="date" class="form-control form-control-sm" id="arrival_date" name="arrival_date">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="leaving_date">Leaving Date:</label>
+        <input type="date" class="form-control form-control-sm" id="leaving_date" name="leaving_date">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control form-control-sm" id="name" name="name"> 
+      </div>
+      <div class="form-group col-md-6">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control form-control-sm" id="email" name="email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control form-control-sm" id="phone" name="phone">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="room-type">Room Type</label>
+        <select
+          class="form-control"
+          id="room-type"
+          name="room-type"
+          required
+        >
+          <option value="single-bed-without-ac">
+            Single Bed Without AC
+          </option>
+          <option value="double-bed-without-ac">
+            Double Bed Without AC
+          </option>
+          <option value="single-bed-with-ac">Single Bed With AC</option>
+          <option value="double-bed-with-ac">Double Bed With AC</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-block btn-book-now col-md-6">Book Now</button>
+    </form>
+  </div>
+
+
+    </header>
+  </center>
+    <br />
+    <footer class="footer-area section_gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6 class="footer_title">About Hotel Blue</h6>
+              <p>
+                HOTEL BLUE provides an outstanding stay for you..It have single
+                bed room and double bed room with AC and non-AC..many people
+                choosing the HOTEL BLUE for making a memorable stay and we
+                always cares about your facilities and happy stay
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6" style="margin-left: 350px">
+            <div class="single-footer-widget">
+              <h6 class="footer_title">Navigation Links</h6>
+              <div class="row">
+                <div class="col-4">
+                  <ul class="list_style">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#facil">Feature</a></li>
+                    <li><a href="#facil">Services</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list_style">
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="accomodation.html">Pricing</a></li>
+                    <li><a href="contact_details.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border_line"></div>
+        <div
+          class="row footer-bottom d-flex justify-content-between align-items-center"
+        >
+          <p class="col-lg-8 col-sm-12 footer-text m-0">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+          <div class="col-lg-4 col-sm-12 footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

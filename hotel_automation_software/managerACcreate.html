@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bootstrap Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+      .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-box {
+        width: 50%;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .form-box input,
+      .form-box button {
+        margin-bottom: 10px;
+      }
+      .input-group-text {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="managerACcreate.php">
+      <div class="form-container">
+        <div class="form-box">
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Enter password"
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text" onclick="togglePassword()">
+                    <i class="fas fa-eye"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="secret-password">Secret Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="secret-password"
+                name="secret"
+                placeholder="Enter secret password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        function togglePassword() {
+          const passwordInput = document.getElementById("password");
+          const eyeIcon = document.querySelector(".fa-eye");
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            eyeIcon.classList.remove("fa-eye");
+            eyeIcon.classList.add("fa-eye-slash");
+          } else {
+            passwordInput.type = "password";
+            eyeIcon.classList.remove("fa-eye-slash");
+            eyeIcon.classList.add("fa-eye");
+          }
+        }
+      </script>
+      <script
+        src="https://kit.fontawesome.com/1234567890.js"
+        crossorigin="anonymous"
+      ></script>
+    </form>
+  </body>
+</html>
