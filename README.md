@@ -1,1 +1,8 @@
 # Hotel-Automation-Software
+
+The Hotel Automation Software is a tool for booking the rooms of Hotel through online by the Customer. It provides the proper management tools and easy access to the customer
+information.This Software reduces the work for customers,it includes online reservation of room from their place only.
+
+The HAS project is intended for the reservations for room that can be made through online. It will be able to automate the various operations of the Hotel. Our Hotel Management System will have three end users: Customer, Receptionist, and Hotel Manager. Hotel Management System will consists of Booking Management System, DBMS Server, and Report Generator. Customers will be able to check for room’s availability, select the rooms, pay for the room and services of the hotel like Restaurant and facilities like Gym,Swimming pools,Play space,Sports Club,Bar and Restaurent etc.. Receptionist will have access to update or modify booking details,user details, user access and issue unique tokens. Manager will able to view the financial report and able to update room information such as cost and category.
+
+The main goal of this introduced automated HAS software is to simplify every day process of hotel. Day to day Hotels are increasing and they need to automate to provide customer ease of access. It will be able to take care of services to customer in a quick manner. This automation will be able to replace the drawbacks of large customer information physical files which were difficult to handle. Secure Transaction, quick retrieval of information, ease of use, quick recovery of errors, fault tolerance are some of the benefits that development team will be working on to achieve end user satisfaction.
